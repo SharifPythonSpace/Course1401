@@ -1,2 +1,6 @@
-# Course
-This repo is for all of materials which you need!
+# Course Materials
+This repository contains code and slide or other documentation for our class:
+
+- [code](./Code/)
+
+- [slide](./Slide/)
