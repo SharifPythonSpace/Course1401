@@ -1,5 +1,5 @@
 # Course Materials
-This repository contains code and slide or other documentation for our class:
+This repository contains code, slide, and other documentation for our class:
 
 - [code](./Code/)
 
