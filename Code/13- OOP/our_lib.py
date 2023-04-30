@@ -17,13 +17,16 @@ class ketab:
     def onvan_begoo(self):
         return self.onvan
 
-
-class ketab_khoon:
+class shakhs():
+   
+    def __init__(self,name,family):
+        self.name= name
+        self.family= family
+class ketab_khoon(shakhs):
     
     def __init__(self, meli, nam, name_khanevadegi):
         self.code_meli = meli
-        self.nam= nam
-        self.name_khanevadegi = name_khanevadegi
+        super().__init__(name_khanevadegi,nam)
         self.ketabha = []
     def che_ketabi_amanat_gerefteh(self):
         return self.ketabha
@@ -31,7 +34,31 @@ class ketab_khoon:
     def amant_gerefan(self,name_ketab):
         self.ketabha.append(name_ketab)
     
+class ketabkhooneh(object):
+    def __init__(self):
+        self.tedad_saloon_motaleh =0
+        self.moozoate_ketab=[]
+        self.tedade_aza=0
+        self.addres_ketabkhooneh=''
+        self.tedade_ghafaseh=0
+        self.saate_bazoo_baste_shodan=()
+        self.list_aza=0
+        self.hazine_sabte_nam=0
+        self.zarfiat=0
+    def sakhte_salon(self,tedad,zarfiat):
+        self.tedad_saloon_motaleh+=tedad
+        self.zarfiat=zarfiat
+        print("saloon ha sakhte shood")
+    def sabt_e_ketabkhooneh(self,address):
+        self.addres_ketabkhooneh=address
+    def takhassos_e_ketabkhoone(self,mozooat):
+        self.moozoate_ketab=mozooat
 
+ketabkhoone_zahra=ketabkhooneh()
+ketabkhoone_zahra.sabt_e_ketabkhooneh('sharif university')
+ketabkhoone_zahra.takhassos_e_ketabkhoone(['math','pyisics','ce'])
+ketabkhoone_zahra.sakhte_salon(4,100)
+print(ketabkhoone_zahra.zarfiat)
 
 cheshmhayash = ketab('cheshmhayash', 'bozorg alavi', 343, 'sales')
 cheshmhayash.amanat_gereftan()
